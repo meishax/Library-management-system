@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <filter>
+        <filter-name>AuthFilter</filter-name>
+        <filter-class>filter.AuthFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <servlet>
+        <servlet-name>StuInsertServlet</servlet-name>
+        <servlet-class>servlet.StuInsertServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StuInsertServlet</servlet-name>
+        <url-pattern>/stu_insert</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>StuListServlet</servlet-name>
+        <servlet-class>servlet.StuListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StuListServlet</servlet-name>
+        <url-pattern>/stu_list</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>StuUpdateServlet</servlet-name>
+        <servlet-class>servlet.StuUpdateServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StuUpdateServlet</servlet-name>
+        <url-pattern>/stu_update</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>StuDeleteServlet</servlet-name>
+        <servlet-class>servlet.StuDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StuDeleteServlet</servlet-name>
+        <url-pattern>/stu_delete</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>StuShowServlet</servlet-name>
+        <servlet-class>servlet.StuShowServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StuShowServlet</servlet-name>
+        <url-pattern>/stu_show</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginCreateServlet</servlet-name>
+        <servlet-class>servlet.LoginCreateServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginCreateServlet</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>BookDeleteServlet</servlet-name>
+        <servlet-class>servlet.BookDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BookDeleteServlet</servlet-name>
+        <url-pattern>/book_delete</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>BookInsertServlet</servlet-name>
+        <servlet-class>servlet.BookInsertServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BookInsertServlet</servlet-name>
+        <url-pattern>/book_insert</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>BookListServlet</servlet-name>
+        <servlet-class>servlet.BookListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BookListServlet</servlet-name>
+        <url-pattern>/book_list</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>BookUpdateServlet</servlet-name>
+        <servlet-class>servlet.BookUpdateServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BookUpdateServlet</servlet-name>
+        <url-pattern>/book_update</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>DocBorInsertServlet</servlet-name>
+        <servlet-class>servlet.DocBorInsertServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DocBorInsertServlet</servlet-name>
+        <url-pattern>/docbor_insert</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>DocBorListServlet</servlet-name>
+        <servlet-class>servlet.DocBorListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DocBorListServlet</servlet-name>
+        <url-pattern>/docbor_list</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>DocBorUpdateServlet</servlet-name>
+        <servlet-class>servlet.DocBorUpdateServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DocBorUpdateServlet</servlet-name>
+        <url-pattern>/docbor_update</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>DocBorDeleteServlet</servlet-name>
+        <servlet-class>servlet.DocBorDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DocBorDeleteServlet</servlet-name>
+        <url-pattern>/docbor_delete</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>BorrowBookServlet</servlet-name>
+        <servlet-class>servlet.BorrowBookServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BorrowBookServlet</servlet-name>
+        <url-pattern>/borrow_book</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>
